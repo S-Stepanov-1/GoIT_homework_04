@@ -4,9 +4,9 @@ phone_book = {}
 
 
 def input_error(function):
-    def inner(*args, **kwargs):
+    def inner(*args):
         try:
-            return function(*args, **kwargs)
+            return function(*args)
         except KeyError:
             return "The requested contact was not found in the phone book."
         except TypeError:
@@ -40,7 +40,7 @@ def add_to_book(name, phone):
 def change_number(name, phone):
     if phone_book[name]:
         phone_book[name] = phone
-        return f"The phone number for contact {name} has been changed to {phone}."
+        return f"The phone number for contact '{name}' has been changed to '{phone}'."
     raise ChangeError
 
 
