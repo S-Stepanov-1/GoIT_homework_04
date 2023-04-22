@@ -4,8 +4,9 @@ Individual homework number 4 on the GoIT platform (module 9)
 ### Installation
 
 Clone this repository
-
-```git clone https://github.com/S-Stepanov-1/GoIT_homework_04.git```
+```
+git clone https://github.com/S-Stepanov-1/GoIT_homework_04.git
+```
 
 ### Description
 
